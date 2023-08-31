@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.herokuapp.theinternet.NegativeTests">
+      <class name="com.herokuapp.theinternet.LoginTests">
         <methods>
-          <include name="incorrectUsernameTest"/>
+          <include name="setUp"/>
+          <include name="positiveLoginTest"/>
+          <include name="tearDown"/>
+          <include name="negativeLoginTest"/>
         </methods>
-      </class> <!-- com.herokuapp.theinternet.NegativeTests -->
+      </class> <!-- com.herokuapp.theinternet.LoginTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

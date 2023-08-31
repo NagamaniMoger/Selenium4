@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [LoginTestsSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="NegativePasswordTests(failed)">
-    <parameter name="password" value="incorrect"/>
-    <parameter name="browser" value="firefox"/>
-    <parameter name="expectedMessage" value="Your password is invalid!"/>
-    <parameter name="username" value="tomsmith"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.herokuapp.theinternet.LoginTests">
         <methods>
           <include name="setUp"/>
+          <include name="positiveLoginTest"/>
           <include name="tearDown"/>
           <include name="negativeLoginTest"/>
         </methods>
       </class> <!-- com.herokuapp.theinternet.LoginTests -->
     </classes>
-  </test> <!-- NegativePasswordTests(failed) -->
-</suite> <!-- Failed suite [LoginTestsSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
